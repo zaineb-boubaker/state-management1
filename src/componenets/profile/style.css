@@ -36,13 +36,16 @@ border-radius: 10px;
 
 }
 
-#profileImg{
+.profileImg{
   width: 140px;
   height: 145px;
   border: #0F547D solid 1px;
   border-radius: 50%;
   /* padding-top: 20px; */
   margin-top: 20px;
+   transition: all 0.4s ease;
+
+
 }
 
 #prof span{
@@ -53,14 +56,13 @@ border-radius: 10px;
 
 .fa-edit{
   position: absolute;
-  top: 206px;
+  top: 211px;
   right: 0;
     transition: transform 0.2s ease;
 
 }
 
 .fa-edit:hover{
-   /* font-size: 1rem;  */
   transform: scale(1.3); 
 }
 
@@ -149,4 +151,59 @@ progress{
 
 #prog h3 {
   margin: 0;
+}
+
+.profileImg:hover{
+/* backdrop-filter: blur(8px); */
+    /* transform: scale(1.03); */
+      opacity: 0.5; /* Change opacity on hover */
+
+
+}
+
+.fa{
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  right: 63px;
+               transition:  all 0.4s ease;
+               color: #268bc5;
+
+  
+}
+/* .fa:hover{
+ 
+} */
+
+#image-container{
+   position: relative;
+
+}
+#image-container:hover .fa{
+  /* border: black solid 3px; */
+ opacity: 1;
+}
+
+#image-container:hover .profileImg{
+  opacity: 0.5;
+}
+
+#male{
+  position: absolute;
+  top:80px;
+  right: 20px;
+}
+
+#female{
+  position: absolute;
+  top:80px;
+  right: 85px;
+}
+
+#male:hover{
+transform: scale(1.06);
+}
+
+#female:hover{
+transform: scale(1.06);
 }

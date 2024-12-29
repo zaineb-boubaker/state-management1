@@ -7,11 +7,26 @@ function Profile({ category }) {
   const [name, setName] = useState("(Edit Name)");
   const [showInputName, setShowInputName] = useState(false);
   const [coins, setCoins] = useState(0);
-  const [level,setLevel] = useState(1)
+  const [level, setLevel] = useState(1);
+  const [showGender, setShowGender] = useState(false);
+  const [gender, setGender] = useState("");
   //   const handleintelligence = () => {
   //   setCoins()
   // }
-  const [progress, setProgress] = useState(0)
+  const handlegender = () => {
+    setShowGender(true);
+  };
+  const handlemale = () => {
+    setShowGender(false);
+    setGender("male");
+  };
+  const handlefemale = () => {
+    setGender("female");
+        setShowGender(false);
+
+  };
+
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     if (category === "intelligence") {
@@ -23,12 +38,11 @@ function Profile({ category }) {
     } else if (category === "charisma") {
       setCoins((prevCoins) => prevCoins + 10);
     }
-  }, [category]); 
+  }, [category]);
 
-  
   useEffect(() => {
     // if (progress < 100) {
-      setProgress(coins);
+    setProgress(coins);
     // } else {
     //   setProgress(0);
     //   setLevel((prevLevel) => prevLevel + 1);
@@ -39,11 +53,9 @@ function Profile({ category }) {
     if (progress >= 100) {
       setProgress(0);
       setLevel((prevLevel) => prevLevel + 1);
-      console.log("ok")
+      console.log("ok");
     }
-  },[]);
-
-  
+  }, []);
 
   const handleNameEdit = () => {
     setShowInputName(true);
@@ -58,7 +70,39 @@ function Profile({ category }) {
     <div id="profile">
       <div id="prof">
         {" "}
-        <img id="profileImg" src="/images/anime.png" alt="" />
+        <div id="image-container">
+          {gender === "male" ? (
+            <img
+              className="profileImg"
+              src="/images/anime-boy-tattoo.png"
+              alt=""
+            />
+          ) : (
+            <img className="profileImg" src="/images/anime.png" alt="" />
+          )}
+          {showGender ? (
+            <div>
+              {" "}
+              <img
+                onClick={handlemale}
+                src="/images/male.png"
+                alt=""
+                width="30px"
+                id="male"
+              />
+              <img
+                onClick={handlefemale}
+                src="/images/female.png"
+                alt=""
+                width="30px"
+                id="female"
+              />
+            </div>
+          ) : (
+            <i onClick={handlegender} className="fas fa-edit fa"></i>
+          )}
+        </div>
+        {/* anime-boy-tattoo.png */}
         <div id="name">
           <h2>WELCOME ,</h2>
           {showInputName ? (

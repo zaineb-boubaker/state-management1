@@ -72,11 +72,7 @@ function Profile({ category }) {
         {" "}
         <div id="image-container">
           {gender === "male" ? (
-            <img
-              className="profileImg"
-              src="/images/anime-boy-tattoo.png"
-              alt=""
-            />
+            <img className="profileImg" src="/images/anime-yakuza1.png" alt="" />
           ) : (
             <img className="profileImg" src="/images/anime.png" alt="" />
           )}

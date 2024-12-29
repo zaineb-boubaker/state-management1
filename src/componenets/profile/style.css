@@ -1,0 +1,152 @@
+#profile{
+    border: solid 2px #0F547D;
+    height: fit-content;
+    /* width: 20%; */
+    min-width: 20%;
+    margin-left:20px;
+    margin-top: 50px;
+    backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(3px);
+border-radius: 10px;
+ transition: backdrop-filter 0.4s ease, transform 0.4s ease;
+ display: flex;
+ /* justify-content: center; */
+ align-items: center;
+ color: #0F547D;
+ flex-direction: column;
+ width: fit-content;
+ 
+}
+
+#prof{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#prof h2{
+  color: #0F547D;
+  font-size: medium;
+}
+
+#profile:hover{
+  backdrop-filter: blur(8px);
+    transform: scale(1.03);
+
+}
+
+#profileImg{
+  width: 140px;
+  height: 145px;
+  border: #0F547D solid 1px;
+  border-radius: 50%;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+}
+
+#prof span{
+  color: #268bc5;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+.fa-edit{
+  position: absolute;
+  top: 206px;
+  right: 0;
+    transition: transform 0.2s ease;
+
+}
+
+.fa-edit:hover{
+   /* font-size: 1rem;  */
+  transform: scale(1.3); /* Optional scaling */
+}
+
+progress{
+  border-radius: 20px;
+  color: #268bc5;
+  height: 5px;
+  margin-top: 20px;
+}
+
+ progress::-webkit-progress-bar {
+      background-color: #ffffff; /* Light gray background */
+      border-radius: 20px;
+    }
+
+     progress::-webkit-progress-value {
+      background-color: #268bc5; /* Green color for progress */
+      border-radius: 20px;
+    }
+
+      progress::-moz-progress-bar {
+      background-color: #268bc5; /* Green color for progress */
+      border-radius: 20px;
+    }
+
+    #grid1{
+      display: grid;
+      gap: 10px;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns of equal width */
+  grid-template-rows: repeat(2, 1fr);     /* 2 rows of equal height */
+  margin-top: 40px;
+    }
+
+    .gridbox{
+      border: solid 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      max-height: 100px;
+    }
+
+    .gridbox h4{
+      color: #268bc5;
+      margin: 0; 
+    }
+
+    .gridbox h2{
+      color: #268bc5;
+      margin: 0; 
+      font-weight: 900;
+    }
+
+#prof input{
+  
+  all: unset;
+  border-bottom: solid #0f547d 1px;
+  color: #268bc5;
+  font-size: large;
+  width: 110px;
+  padding-left: 5px;
+
+}
+
+#savenametick{
+  width: 20px;
+  margin-left: 200px;
+             transition:  transform 0.4s ease;
+
+}
+#savenametick:hover {
+  content: url('/images/check-mark (1).png'); /* Image to display on hover */
+           transform: scale(1.15);
+
+}
+#name{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+#prog h3 {
+  margin: 0;
+}

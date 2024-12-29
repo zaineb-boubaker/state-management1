@@ -1,0 +1,87 @@
+#task{
+    display: flex;
+    /* border: solid 1px #0F547D ;  */
+    align-items: center;
+    justify-content: space-between;
+    min-width: 28rem;
+    width: fit-content;
+    height: 60px;
+    border-radius: 20px;
+    padding: 5px;
+         transition:  transform 0.4s ease;
+         padding-left: 20px;
+         
+}
+#task:hover{
+     transform: scale(0.98);
+
+}
+
+#task img{
+    width: 25px;
+             transition:  transform 0.4s ease;
+
+}
+
+#task img:hover{
+         transform: scale(1.15);
+
+
+}
+
+#task h3{
+    text-transform: capitalize;
+    margin: 0;
+    color: #910e1e;
+    /* border: solid 1px; */
+    font-weight: 900;
+      font-family: 'PlaywriteAustraliaVictoriaGuides', sans-serif;
+  /* -webkit-text-stroke: 0.1px rgb(255, 255, 255);  */
+  
+ /* text-shadow: 
+    1px 1px 0 #00000080,
+    -1px -1px 0 #00000070, 
+    1px -1px 0 #0000005e, 
+    -1px 1px 0 #00000075;   */
+
+}
+
+#task h3:hover{
+    cursor: text;
+}
+
+#task p:hover{
+    cursor: text;
+    
+}
+
+
+#task p{
+    margin: 0;
+    color: #8C2732;
+      font-family: 'PlaywriteAustraliaVictoriaGuides', sans-serif;
+      font-size: smaller;
+
+}
+
+
+#icons{
+    display: flex;
+    /* border: solid; */
+    width: 20vh;
+    justify-content: space-between;
+}
+
+#tick:hover {
+  content: url('/images/check-mark (1).png'); /* Image to display on hover */
+}
+#pen:hover {
+  content: url('/images/pen-tool (2).png'); /* Image to display on hover */
+}
+#delete:hover {
+  content: url('/images/delete (1).png'); /* Image to display on hover */
+}#delete1:hover {
+  content: url('/images/delete (1).png'); /* Image to display on hover */
+}
+
+

@@ -51,8 +51,8 @@ function TaskItem({ id, title, description, isDone, setTasksList, tasksList }) {
     <div
       style={
         isDone
-          ? { border: "1px solid #08F62C " } // Correct style for the "done" state 33A236
-          : { border: "1px solid #0F547D" } // Correct style for the "not done" state
+          ? { border: "1px solid #08F62C " } 
+          : { border: "1px solid #0F547D" } 
       }
       id="task"
     >
@@ -69,8 +69,8 @@ function TaskItem({ id, title, description, isDone, setTasksList, tasksList }) {
           <h3
             style={
               isDone
-                ? { color: "#08F62C " } // Correct style for the "done" state 33A236
-                : { color: "#b63443" } // Correct style for the "not done" state
+                ? { color: "#08F62C " } 
+                : { color: "#b63443" }
             }
           >
             {title}

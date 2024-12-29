@@ -61,7 +61,7 @@ border-radius: 10px;
 
 .fa-edit:hover{
    /* font-size: 1rem;  */
-  transform: scale(1.3); /* Optional scaling */
+  transform: scale(1.3); 
 }
 
 progress{
@@ -72,25 +72,25 @@ progress{
 }
 
  progress::-webkit-progress-bar {
-      background-color: #ffffff; /* Light gray background */
+      background-color: #ffffff; 
       border-radius: 20px;
     }
 
      progress::-webkit-progress-value {
-      background-color: #268bc5; /* Green color for progress */
+      background-color: #268bc5; 
       border-radius: 20px;
     }
 
       progress::-moz-progress-bar {
-      background-color: #268bc5; /* Green color for progress */
+      background-color: #268bc5; 
       border-radius: 20px;
     }
 
     #grid1{
       display: grid;
       gap: 10px;
-    grid-template-columns: repeat(2, 1fr);  /* 2 columns of equal width */
-  grid-template-rows: repeat(2, 1fr);     /* 2 rows of equal height */
+    grid-template-columns: repeat(2, 1fr);  
+  grid-template-rows: repeat(2, 1fr);     
   margin-top: 40px;
     }
 
@@ -136,7 +136,7 @@ progress{
 
 }
 #savenametick:hover {
-  content: url('/images/check-mark (1).png'); /* Image to display on hover */
+  content: url('/images/check-mark (1).png'); 
            transform: scale(1.15);
 
 }

@@ -27,25 +27,25 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
  setCategory(catv1);
   }
 
-  //  const [selectedCategory, setSelectedCategory] = useState(""); // Make sure initial value is empty string or valid value
+  //  const [selectedCategory, setSelectedCategory] = useState(""); 
 
   //  const handleChange = (e) => {
-  //    setSelectedCategory(e.target.value); // Update state with selected value
+  //    setSelectedCategory(e.target.value); 
   //      console.log(selectedCategory);
   //  };
 
   const handleAdd = () => {if (!newTask.title) {
        alert("Please select a title!");
-       return; // Stop the function if category is empty
+       return; 
   }
     if (!newTask.description) {
        alert("Please select a description!");
-       return; // Stop the function if category is empty
+       return; 
     }
     
     if (!category) {
        alert("Please select a category!");
-       return; // Stop the function if category is empty
+       return;
     }
    
     // setNewTask({
@@ -82,12 +82,12 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
         onClose={handleClose}
         sx={{
           "& .MuiDialog-paper": {
-            backgroundImage: 'url("/images/anime-boy-lofi.jpg")', // Add background image
+            backgroundImage: 'url("/images/anime-boy-lofi.jpg")', 
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            color: "white", // Ensure text is visible against the background
-            backdropFilter: "blur(8px)", // Apply blur
+            color: "white", 
+            backdropFilter: "blur(8px)",
             height: "250px",
           },
         }}
@@ -114,10 +114,10 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
       >
         <DialogTitle
           sx={{
-            color: "#0F547D", // Text color
-            borderColor: "white", // Outline color
+            color: "#0F547D", 
+            borderColor: "white", 
             fontWeight: "700",
-            backdropFilter: "blur(8px)", // Apply blur
+            backdropFilter: "blur(8px)", 
             height: "20px",
           }}
         >
@@ -141,7 +141,7 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
             variant="standard"
             sx={{
               "&:focus": {
-                backdropFilter: "blur(8px)", // Apply blur
+                backdropFilter: "blur(8px)",
                 borderTopRightRadius: "20px",
                 borderTopLeftRadius: "20px",
                 border: "2px solid white",
@@ -155,7 +155,7 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
               },
               "& .MuiInputBase-root.Mui-focused": {
                 color: "white",
-                backdropFilter: "blur(6px)", // Apply blur
+                backdropFilter: "blur(6px)", 
                 borderTopRightRadius: "10px",
                 borderTopLeftRadius: "10px",
                 borderTop: "white 1px solid",
@@ -178,8 +178,8 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
                 borderBottomColor: "white",
               },
               "& .MuiInput-underline:hover:before": {
-                borderBottomColor: "#0F547D", // Change the color here for hover
-                borderBottomWidth: "2px", // Default border thickness
+                borderBottomColor: "#0F547D", 
+                borderBottomWidth: "2px",
               },
             }}
             onChange={(e) => {
@@ -199,13 +199,13 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
             variant="standard"
             sx={{
               "&:focus": {
-                backdropFilter: "blur(8px)", // Apply blur
+                backdropFilter: "blur(8px)",
                 borderTopRightRadius: "20px",
                 borderTopLeftRadius: "20px",
                 border: "2px solid white",
               },
               // "&:hover": {
-              //   backdropFilter: "blur(8px)", // Apply blur
+              //   backdropFilter: "blur(8px)",
               //   borderTopRightRadius: "20px",
               //   borderTopLeftRadius: "20px",
               //   border: "white",
@@ -219,7 +219,7 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
               },
               "& .MuiInputBase-root.Mui-focused": {
                 color: "white",
-                backdropFilter: "blur(6px)", // Apply blur
+                backdropFilter: "blur(6px)", 
                 borderTopRightRadius: "10px",
                 borderTopLeftRadius: "10px",
                 borderTop: "white 1px solid",
@@ -242,8 +242,8 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
                 borderBottomColor: "white",
               },
               "& .MuiInput-underline:hover:before": {
-                borderBottomColor: "#0F547D", // Change the color here for hover
-                borderBottomWidth: "2px", // Default border thickness
+                borderBottomColor: "#0F547D", 
+                borderBottomWidth: "2px", 
               },
             }}
             onChange={(e) => {
@@ -255,8 +255,8 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
             }}
           />
           <Select
-            // value={selectedCategory} // Bind the value to the state
-            // onChange={handleChange} // Update the state on change
+            // value={selectedCategory} 
+            // onChange={handleChange}
             // displayEmpty
             value={catv1}
             onChange={handlecategorychange}
@@ -264,10 +264,10 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             sx={{
-              width: 30, // Custom width
-              height: 40, // Custom height
-              fontSize: "1rem", // Font size
-              border: "1px solid #0F547D", // Border width and style
+              width: 30, 
+              height: 40,
+              fontSize: "1rem", 
+              border: "1px solid #0F547D", 
               margin: "11px",
               // "&:hover": {
               //   borderColor: "green",
@@ -280,7 +280,7 @@ function Add({ setTasksList, tasksList, setCategory ,category ,title , descripti
               PaperProps: {
                 sx: {
                   backgroundColor: "#612A30",
-                  color: "white", // Change background color of the dropdown menu
+                  color: "white", 
                 },
               },
             }}

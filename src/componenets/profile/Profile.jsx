@@ -23,7 +23,7 @@ function Profile({ category }) {
     } else if (category === "charisma") {
       setCoins((prevCoins) => prevCoins + 10);
     }
-  }, [category]); // This will run whenever `category` changes
+  }, [category]); 
 
   
   useEffect(() => {

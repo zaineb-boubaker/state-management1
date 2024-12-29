@@ -73,15 +73,15 @@
 }
 
 #tick:hover {
-  content: url('/images/check-mark (1).png'); /* Image to display on hover */
+  content: url('/images/check-mark (1).png'); 
 }
 #pen:hover {
-  content: url('/images/pen-tool (2).png'); /* Image to display on hover */
+  content: url('/images/pen-tool (2).png'); 
 }
 #delete:hover {
-  content: url('/images/delete (1).png'); /* Image to display on hover */
+  content: url('/images/delete (1).png');
 }#delete1:hover {
-  content: url('/images/delete (1).png'); /* Image to display on hover */
+  content: url('/images/delete (1).png'); 
 }
 
 

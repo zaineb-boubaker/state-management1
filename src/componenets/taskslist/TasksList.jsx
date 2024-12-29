@@ -21,7 +21,7 @@ function TasksList({ tasksList, setTasksList }) {
   }
   return (
     <div id="taskslist">
-      <div id="filter">
+      {tasksList.length > 0 ?  <div id="filter">
         {doneFilter || undoneFilter ? (
           <img
             src="/images/back (3).png"
@@ -35,7 +35,8 @@ function TasksList({ tasksList, setTasksList }) {
             <button onClick={handlefilterundone}>Undone</button>{" "}
           </div>
         )}
-      </div>
+      </div> : <div></div>}
+     
       {tasksList.length > 0 ? (
         tasksList
           .filter((elt) => (doneFilter ? elt.isDone : undoneFilter ? !elt.isDone : elt))
